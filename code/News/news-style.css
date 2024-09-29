@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    /* border-style: solid;
+    border-color: purple; */
+    font-family: 'Inter';
+    cursor: default;
+    text-decoration: none;
+    /* scroll-snap-type: y mandatory; */
+}
+
+:root{
+
+    --red-color: #B80000;
+    --hover-red-color: #ff0000;
+    --grey-color: #D9D9D9;
+    --footer-color: #242424;
+    --footer-font: #959595;
+}
+
+body{
+    /* background-color: var(--footer-color); */
+    box-shadow: 0px 40px 100px black inset;
+}
+
+.bg{
+
+    background-image: linear-gradient(0deg ,rgb(68, 0, 0), black 65%);
+}
+
+/* Navbar */
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 178px;
+    padding-top: 30px;
+    /* scroll-snap-align: start; */
+}
+
+.navbar .logo h1,
+.navbar .logo span{
+
+    font-size: 48px;
+    font-family: 'Kanit', sans-serif;
+    color: var(--red-color);
+}
+
+.navbar .logo span{
+
+    color: white;
+}
+
+.navbar .menu{
+
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    transition: linear 0.2s;
+    text-shadow: 8px 8px 10px black;
+}
+
+.navbar a:hover{
+
+    color: var(--red-color);
+}
+
+/* Home */
+
+.top-5{
+
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 35px;
+    margin-top: 50px;
+    text-shadow: 8px 8px 10px black;
+}
+
+.home1, .home2, .home3, .home4, .home5{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 728px; */
+    box-shadow: 0px 50px 80px rgba(0, 0, 0, 1) inset, 0px -50px 80px rgba(0, 0, 0, 1) inset;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 77px;
+    padding: 110px 0px;
+    /* scroll-snap-align: start; */
+}
+
+.text{
+
+    align-items: center;
+    align-content: center;
+}
+
+.text h2{
+
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 29px;
+}
+
+.text h3{
+
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.text p{
+
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    max-width: 887px;
+    line-height: 146.5%;
+    text-align: justify;
+}
+
+.text span{
+
+    color: var(--hover-red-color);
+}
+
+.home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+    object-fit: cover;
+    width: 363px;
+    height: 484px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.synopsis{
+
+    display: flex;
+    gap: 6px;
+}
+
+.button .play-btn button{
+
+    cursor: pointer;
+    padding: 9px 66px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--red-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: linear 0.2s;
+}
+
+.button .download-btn button{
+
+    cursor: pointer;
+    padding: 9px 42px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--red-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: linear 0.2s;
+}
+
+.button button:hover{
+
+    color: var(--hover-red-color);
+    background-color: white;
+}
+
+.image{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Home 1, Home 3, Home 5 */
+
+.home1{
+
+    background-image: url("/image/harry-bg.jpg");
+}
+
+.home3{
+
+    background-image: url("/image/avengers-bg.jpg");
+}
+
+.home5{
+
+    background-image: url("/image/minion-bg.jpg");
+}
+
+.home1 .button, .home3 .button, .home5 .button{
+
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+/* Home 2, Home 4 */
+
+.home2{
+
+    background-image: url("/image/titanic-bg.jpg");
+}
+
+.home4{
+
+    background-image: url("/image/puss-bg.png");
+}
+
+.home2 .button, .home4 .button{
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 1640px){
+
+    /* Navbar */
+
+    .navbar{
+
+        padding: 0px 150px;
+        padding-top: 30px;
+    }
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 44px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 28px;
+    }
+
+    .navbar .menu{
+
+        gap: 90px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 56px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 100px 0px;
+    }
+
+    .text h2{
+
+        font-size: 36px;
+        margin-bottom: 29px;
+    }
+
+    .text h3{
+
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .text p{
+
+        font-size: 20px;
+        max-width: 807px;
+        line-height: 160.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 323px;
+        height: 444px;
+    }
+
+    .button .play-btn button{
+
+        padding: 9px 60px;
+        font-size: 18px;
+    }
+
+    .button .download-btn button{
+
+        padding: 9px 36px;
+        font-size: 18px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 35px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 35px;
+    }
+
+    .synopsis h3{
+
+        padding-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+
+    /* Navbar */
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 40px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 24px;
+    }
+
+    .navbar .menu{
+
+        gap: 80px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 48px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 100px 0px;
+        gap: 60px;
+    }
+
+    .text h2{
+
+        font-size: 32px;
+        margin-bottom: 29px;
+    }
+
+    .text h3{
+
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .text p{
+
+        font-size: 16px;
+        max-width: 727px;
+        line-height: 175.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 283px;
+        height: 404px;
+    }
+
+    .button .play-btn button{
+
+        padding: 9px 56px;
+        font-size: 15px;
+    }
+
+    .button .download-btn button{
+
+        padding: 9px 32px;
+        font-size: 15px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 28px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 28px;
+    }
+
+    .synopsis h3{
+
+        padding-top: 3px;
+    }
+}
+
+@media only screen and (max-width: 1240px){
+
+    /* Navbar */
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 36px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 20px;
+    }
+
+    .navbar .menu{
+
+        gap: 70px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 36px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 90px 0px;
+        gap: 50px;
+    }
+
+    .text h2{
+
+        font-size: 28px;
+        margin-bottom: 29px;
+    }
+
+    .text h3{
+
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .text p{
+
+        font-size: 14px;
+        max-width: 667px;
+        line-height: 180.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 243px;
+        height: 364px;
+    }
+
+    .button .play-btn button{
+
+        padding: 9px 52px;
+        font-size: 12px;
+    }
+
+    .button .download-btn button{
+
+        padding: 9px 28px;
+        font-size: 12px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 22px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 22px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    /* Navbar */
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 32px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 16px;
+    }
+
+    .navbar .menu{
+
+        gap: 60px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 32px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 80px 0px;
+        gap: 40px;
+    }
+
+    .text h2{
+
+        font-size: 24px;
+        margin-bottom: 29px;
+    }
+
+    .text h3{
+
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .text p{
+
+        font-size: 12px;
+        max-width: 567px;
+        line-height: 200.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 203px;
+        height: 324px;
+    }
+
+    .button .play-btn button{
+
+        padding: 7px 36px;
+        font-size: 10px;
+    }
+
+    .button .download-btn button{
+
+        padding: 7px 22px;
+        font-size: 10px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 18px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    /* Navbar */
+
+    .navbar{
+
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 28px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 16px;
+    }
+
+    .navbar .menu{
+
+        gap: 40px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 32px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 80px 0px;
+        gap: 30px;
+    }
+
+    .text h2{
+
+        font-size: 20px;
+        margin-bottom: 29px;
+    }
+
+    .text h3{
+
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .text p{
+
+        font-size: 10px;
+        max-width: 407px;
+        line-height: 200.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 153px;
+        height: 254px;
+    }
+
+    .button .play-btn button{
+
+        padding: 7px 34px;
+        font-size: 10px;
+    }
+
+    .button .download-btn button{
+
+        padding: 7px 20px;
+        font-size: 10px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 15px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    /* Navbar */
+
+    .navbar{
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar .logo h1,
+    .navbar .logo span{
+    
+        font-size: 18px;
+    }
+    
+    .navbar .logo span{
+    
+        color: white;
+    }
+    
+    .navbar a{
+    
+        font-size: 12px;
+    }
+
+    .navbar .menu{
+
+        gap: 20px;
+    }
+
+    /* Home */
+
+    .top-5{
+
+        font-size: 32px;
+    }
+
+    .home1, .home2, .home3, .home4, .home5{
+
+        padding: 50px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .text h2{
+
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .text h3{
+
+        font-size: 9px;
+        margin-bottom: 10px;
+        min-width: 50px;
+    }
+
+    .text p{
+
+        font-size: 9px;
+        max-width: 307px;
+        line-height: 200.5%;
+        text-align: justify;
+    }
+
+    .text span{
+
+        color: var(--hover-red-color);
+    }
+
+    .home1 img, .home2 img, .home3 img, .home4 img, .home5 img{
+
+        width: 183px;
+        height: 254px;
+    }
+
+    .button .play-btn button{
+
+        padding: 7px 34px;
+        font-size: 10px;
+    }
+
+    .button .download-btn button{
+
+        padding: 7px 20px;
+        font-size: 10px;
+    }
+
+    /* Home 1, Home 3, Home 5 */
+
+    .home1 .image,
+    .home3 .image,
+    .home5 .image{
+
+        order: 0;
+    }
+
+    .home1 .text,
+    .home3 .text,
+    .home5 .text{
+
+        order: 1;
+    }
+
+    .home1 .button, .home3 .button, .home5 .button{
+
+        gap: 15px;
+    }
+
+    /* Home 2, Home 4 */
+
+    .home2 .button, .home4 .button{
+
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    .synopsis{
+
+        gap: 1px;
+    }
+}

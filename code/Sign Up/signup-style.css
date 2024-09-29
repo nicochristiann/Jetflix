@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    /* border-style: solid;
+    border-color: white; */
+    font-family: 'Inter';
+    cursor: default;
+    text-decoration: none;
+    /* scroll-snap-type: y mandatory; */
+}
+
+:root{
+
+    --red-color: #B80000;
+    --hover-red-color: #ff0000;
+    --grey-color: #D9D9D9;
+    --footer-color: #242424;
+    --footer-font: #959595;
+}
+
+body{
+
+    background-image: linear-gradient(200deg ,rgb(68, 0, 0), black 65%);
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.logo h1, 
+.logo span{
+
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: var(--red-color);
+}
+
+.logo span{
+
+    color: white;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 998px;
+}
+
+.container .box{
+
+    /* display: block; */
+    /* height: 750px; */
+    align-items: center;
+    width: 566px;
+    border-radius: 50px;
+    box-shadow: 18px 24px 18px rgba(0, 0, 0, 0.27);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 44px;
+    padding-bottom: 40px;
+}
+
+.container h2{
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+label{
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.input-name,
+.input-pw,
+.input-confirmpw,
+.input-date,
+.input-gender,
+.agree{
+    
+    align-items: flex-start;
+    padding: 0px 64px;
+}
+
+.input-gender label{
+
+    padding-left: 14px;
+    padding-right: 89px;
+}
+
+.agree{
+
+    margin-top: 40px;
+    text-align: center;
+}
+
+.agree label{
+
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 16px;
+}
+
+input[type=text],
+input[type=password],
+input[type=number]{
+
+    font-family: 'Kanit', sans-serif;
+    border-bottom: 1px solid white;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    caret-color: white;
+    cursor: text;
+    font-size: 20px;
+    padding: 10px 5px;
+    color: white;
+    margin-bottom: 33px;
+    background-color: none;
+}
+
+.birth{
+
+    display: flex;
+    gap: 60px;
+    padding-left: 5px;
+}
+
+.date input[type=number]{
+
+    width: 70%;
+    padding: 5px 6px;
+}
+
+.month input[type=number]{
+
+    width: 80%;
+    padding: 5px 6px;
+}
+
+.year input[type=number]{
+
+    width: 90%;
+    padding: 5px 6px;
+}
+
+
+input[type=date]{
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    height: 55px;
+    padding: 0px 26px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.38);
+    margin-bottom: 20px;
+}
+
+::-webkit-calendar-picker-indicator{
+
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: linear 0.15s;
+}
+
+::-webkit-calendar-picker-indicator:hover{
+
+    background-color: rgb(187, 187, 187);
+}
+
+input[type=radio],
+input[type=checkbox]{
+
+    cursor: pointer;
+}
+
+.button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+
+    font-family: 'Kanit', sans-serif;
+    padding: 10px 68px;
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+document.getElementById("profile-name").innerHTML = localStorage.getItem("nameValue")

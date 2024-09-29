@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/code/Footer/footer.css">
+    <link rel="stylesheet" href="signup-style.css">
+    <title>JETFLIX</title>
+</head>
+<body>
+
+    <div class="logo">
+        <h1>JET<span>FLIX</span></h1>
+    </div>
+
+    <!-- Sign Up Start -->
+
+    <div class="container">
+
+        <div class="box">
+
+            <h2>Sign Up</h2>
+
+            <form action="" method="post" id="form" class="form"></form>
+                <div class="input-name">
+
+                    <label>Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="input-pw">
+
+                    <label>Password</label>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div>
+
+                <div class="input-confirmpw">
+
+                    <label>Confirm Password</label>
+                    <br>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Re-enter password">
+                </div>
+
+                <div class="input-date">
+
+                    <label>Date of Birth</label>
+                    <br>
+                    <br>
+
+                    <div class="birth">
+                        <div class="date">
+                            <label>Date</label>
+                            <br>
+                            <input type="number" name="date" id="date" placeholder="dd" min="1" max="31">
+                        </div>
+                        <div class="month">
+                            <label>Month</label>
+                            <br>
+                            <input type="number" name="month" id="month" placeholder="mm" min="1" max="12">
+                        </div>
+                        <div class="year">
+                            <label>Year</label>
+                            <br>
+                            <input type="number" name="year" id="year" placeholder="yyyy" min="1800" max="2023">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-gender">
+
+                    <input type="radio" name="gender" id="male">
+                    <label>Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label>Female</label>
+                </div>
+
+                <div class="agree">
+                    
+                    <input type="checkbox" name="gender" id="agreement">
+                    <label>I Agree with the Terms & Condition</label>
+                </div>
+
+                <div class="button">
+                    <button type="button" onclick="checkInput()" class="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up End -->
+
+    <!-- Footer Start -->
+
+    <div class="footer">
+        <div class="text">
+            <h1>About Us</h1>
+            <p>Jetflix is a free streaming service platform that allows users to watch various movies they want for free. 
+                Enjoy every movies that you like without worries of any subscription. Register now and watch your favorite movies for FREE!
+            </p>
+            <h2><span>JET</span>FLIX Indonesia</h2>
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+            <img src="/image/socials.png" alt="socials">
+        </div>
+    </div>
+
+    <!-- Footer End -->
+    <!-- <script src="/code/Home/Login/login-script.js"></script> -->
+    <script src="signup-script.js"></script>
+</body>
+</html>
